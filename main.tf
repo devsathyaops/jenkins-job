@@ -8,7 +8,7 @@ resource "aws_spot_instance_request" "spot_req" {
     Name = "spot-ins"
     value = "${var.server_job}.spot${count.index + 1}"
   }
- # provisioner "local-exec" {
-  #    command = "aws ec2 create-tags --resources ${self.spot_instance_id} --tags Key=Name,Value=${var.server_job}-spot-instances-${count.index} --region ${var.aws_region}"
-  #}
+  provisioner "local-exec" {
+      command = "aws ec2 create-tags --resources ${self.spot_instance_id} --tags Key=Name,Value=${var.server_job}-spot-instances-${count.index} --region ${var.aws_region}"
+  }
 }
