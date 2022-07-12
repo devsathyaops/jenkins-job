@@ -9,3 +9,15 @@ variable "source_instance_id"{
 variable "instance_type" {
 type = string
 }
+
+variable "spot_price" {
+}
+
+variable "server_job" {
+}
+
+variable "instance_count" {
+}
+
+variable "type"{
+}
