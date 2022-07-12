@@ -3,9 +3,9 @@ variable "aws_region" {
 }
 
 variable "source_instance_id"{
- type = "string"
+ type = string
 }
 
 variable "instance_type" {
-type = "string"
+type = string
 }
