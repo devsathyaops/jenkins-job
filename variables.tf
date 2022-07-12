@@ -6,3 +6,7 @@ variable "server_job" {
 type = string
 }
 
+variable "instance_count" {
+   type = string
+}
+
