@@ -5,7 +5,7 @@ resource "aws_spot_instance_request" "spot_req" {
   count = "${var.instance_count}"
 
   tags = {
-    Name = "spot-ins"
+    key = "Name" 
     value = "${var.server_job}.spot${count.index + 1}"
   }
   #provisioner "local-exec" {
