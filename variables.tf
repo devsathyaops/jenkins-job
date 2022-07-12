@@ -7,6 +7,6 @@ variable "server_job" {
 }
 
 variable "instance_count" {
-   type = string
+   #type = string
 }
 
