@@ -3,10 +3,10 @@ variable "aws_region" {
 }
 
 variable "server_job" {
-#type = string
+type = string
 }
 
 variable "instance_count" {
-   #type = string
+   type = string
 }
 
