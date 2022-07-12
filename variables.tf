@@ -21,3 +21,15 @@ variable "instance_count" {
 
 variable "type"{
 }
+
+variable "subnet_id" {
+
+}
+
+variable "security_group" {
+    
+}
+
+variable "iam_role" {
+    
+}
